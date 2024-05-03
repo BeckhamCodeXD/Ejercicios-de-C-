@@ -72,31 +72,32 @@
 //}
 //Calculadora de Factorial: 
 //4) Crea una función que calcule la factorial de un número. 
-using System;
 
-class Program
+using system;
+
+class program
 {
-    static void Main(string[] args)
+    static void main(string[] args)
     {
-        Console.WriteLine("Ingrese un número para calcular su factorial:");
-        if (int.TryParse(Console.ReadLine(), out int numero))
+        console.writeline("ingrese un número para calcular su factorial:");
+        if (int.tryparse(console.readline(), out int numero))
         {
-            long factorial = CalcularFactorial(numero);
-            Console.WriteLine("El factorial de " + numero + " es: " + factorial);
+            long factorial = calcularfactorial(numero);
+            console.writeline("el factorial de " + numero + " es: " + factorial);
         }
         else
         {
-            Console.WriteLine("Error: Entrada no válida.");
+            console.writeline("error: entrada no válida.");
         }
     }
 
-    static long CalcularFactorial(int n)
+    static long calcularfactorial(int n)
     {
         if (n < 0)
         {
-            throw new ArgumentException("El factorial no está definido para números negativos.");
+            throw new argumentexception("el factorial no está definido para números negativos.");
         }
-        return (n == 0 || n == 1) ? 1 : n * CalcularFactorial(n - 1);
+        return (n == 0 || n == 1) ? 1 : n * calcularfactorial(n - 1);
     }
 }
 
