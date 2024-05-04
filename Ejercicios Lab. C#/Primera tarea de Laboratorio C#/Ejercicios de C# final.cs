@@ -1,56 +1,57 @@
 ﻿//Ejercicio parte 01: 
 //Operaciones Básicas: 
 //1) Realiza la suma, resta, multiplicación y división de dos números ingresados por el usuario.
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Ingrese dos números:");
-
-        Console.Write("Número 1: ");
-        double numero1 = double.Parse(Console.ReadLine());
-
-        Console.Write("Número 2: ");
-        double numero2 = double.Parse(Console.ReadLine());
-
-        Console.WriteLine($"Suma: {numero1 + numero2}");
-        Console.WriteLine($"Resta: {numero1 - numero2}");
-        Console.WriteLine($"Multiplicación: {numero1 * numero2}");
-
-        if (numero2 != 0)
-        {
-            Console.WriteLine($"División: {numero1 / numero2}");
-        }
-        else
-        {
-            Console.WriteLine("No es posible dividir por cero.");
-        }
-    }
-}
-
-//2) Solicita un número al usuario y determina si es par o impar. 
-
 //class Program
 //{
 //    static void Main(string[] args)
 //    {
-//        Console.WriteLine("Ingrese un número:");
-//        if (!int.TryParse(Console.ReadLine(), out int numero))
-//        {
-//            Console.WriteLine("Error: Entrada no válida.");
-//            return;
-//        }
+//        Console.WriteLine("Ingrese dos números:");
 
-//        if (numero % 2 == 0)
+//        Console.Write("Número 1: ");
+//        double numero1 = double.Parse(Console.ReadLine());
+
+//        Console.Write("Número 2: ");
+//        double numero2 = double.Parse(Console.ReadLine());
+
+//        Console.WriteLine($"Suma: {numero1 + numero2}");
+//        Console.WriteLine($"Resta: {numero1 - numero2}");
+//        Console.WriteLine($"Multiplicación: {numero1 * numero2}");
+
+//        if (numero2 != 0)
 //        {
-//            Console.WriteLine(numero + " es par.");
+//            Console.WriteLine($"División: {numero1 / numero2}");
 //        }
 //        else
 //        {
-//            Console.WriteLine(numero + " es impar.");
+//            Console.WriteLine("No es posible dividir por cero.");
 //        }
 //    }
 //}
+
+//2) Solicita un número al usuario y determina si es par o impar. 
+//class Program
+//{
+//    static void Main(string[] args)
+//    {
+//        Console.Write("Ingrese un número: ");
+//        int numero = int.Parse(Console.ReadLine());
+
+//        if (EsPar(numero))
+//        {
+//            Console.WriteLine("El número ingresado es par.");
+//        }
+//        else
+//        {
+//            Console.WriteLine("El número ingresado es impar.");
+//        }
+//    }
+
+//    static bool EsPar(int numero)
+//    {
+//        return numero % 2 == 0;
+//    }
+//}
+
 //Área de un Triángulo: 
 //3) Pide la base y la altura de un triángulo al usuario y calcula su área. 
 
@@ -165,19 +166,26 @@ class Program
 //}
 //Lista de Cuadrados: 
 //8) Crea una lista de los cuadrados de los primeros 10 números naturales.
-//Console.WriteLine("====COMENCEMOS CON EL PROGRAMA====");
-//List<int> listCudrados = new List<int>();
-//for (int i = 1; i <= 10; i++)
+
+//class Program
 //{
-//    int cuadrado = i * i;
-//    listCudrados.Add(cuadrado);
+//    static void Main(string[] args)
+//    {
+//        List<int> cuadrados = new List<int>();
+
+//        for (int i = 1; i <= 10; i++)
+//        {
+//            cuadrados.Add(i * i);
+//        }
+
+//        Console.WriteLine("Los cuadrados de los primeros 10 números naturales son:");
+
+//        foreach (int cuadrado in cuadrados)
+//        {
+//            Console.WriteLine(cuadrado);
+//        }
+//    }
 //}
-//Console.WriteLine("El cuadrado de los 10 primeros numeros naturales es:");
-//foreach (int num in listCudrados)
-//{
-//    Console.WriteLine(num + " ");
-//}
-//Console.WriteLine();
 //Contador de Vocales: 
 //9) Cuenta el número de vocales en una cadena de texto. 
 
